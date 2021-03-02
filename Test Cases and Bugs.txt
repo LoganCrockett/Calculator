@@ -1,0 +1,22 @@
+/*
+    Created By: Logan Crockett
+    On: 8/12/20
+    Purpose: To hold some test cases and known bugs of Version 1.0 of the calculator.html page
+*/
+
+Test Cases:
+
+1: 8/2+4*3 = 16
+2: 2/0: Divison by Zero Error
+3: Any operator with no value: Should display a message in console saying it couldn't perform operation
+    Ex: Hitting '+' when the expression = '' it should put an error message in the console
+4: 8/0 + 2: Division By Zero Error
+5: 2+3-6*2 = -7
+
+Bugs:
+
+8/12/20
+1: When hitting equals after solving an expression, an error it displayed in the console that says:
+     "Uncaught TypeError: expression.split is not a function"
+2: It does allow you to stack operators; It does display an error message (NaN), but we should prevent it from happening
+    Ex: 1 + + + +

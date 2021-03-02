@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+    Created by: Logan Crockett
+    On: 8/7/20
+
+    Version: 1.0
+
+    Purpose: This page is supposed to provide the general layout of a calculator. We will use CSS & JS to style it
+    and provide functionality
+-->
+<html lang="en">
+
+    <head>
+        <title>Calculator Version 1.0</title>
+        <meta charset="utf-8">
+        <link href="./calculatorStyle.css" rel="stylesheet">
+        <script src="./calculatorFunctions.js"></script>
+    </head>
+
+    <body onload="init();">
+
+        <h1>Calculator Version 1.0</h1>
+
+        <!--Put the calculator here; We will use a table to aid with layout-->
+        <table>
+
+            <tbody>
+
+                <!--Use this row to display the input and the output-->
+                <tr><td colspan="4"><span id="result">0</span></td></tr>
+                <!--Use the remaining rows to add input buttons-->
+                <tr>
+                    <td><button id="nine" onclick="nine();">9</button></td>
+                    <td><button id="eight" onclick="eight();">8</button></td>
+                    <td><button id="seven" onclick="seven();">7</button></td>
+                    <td><button id="plus" onclick="addPlus();">+</button></td>
+                </tr>
+                <tr>
+                    <td><button id="six" onclick="six();">6</button></td>
+                    <td><button id="five" onclick="five();">5</button></td>
+                    <td><button id="four" onclick="four();">4</button></td>
+                    <td><button id="minus" onclick="addMinus();">-</button></td>
+                </tr>
+                <tr>
+                    <td><button id="three" onclick="three();">3</button></td>
+                    <td><button id="two" onclick="two();">2</button></td>
+                    <td><button id="one" onclick="one();">1</button></td>
+                    <td><button id="multiply" onclick="addMultiply();">*</button></td>
+                </tr>
+                <tr>
+                    <td><button id="clear" onclick="clearExpression();">C</button></td>
+                    <td><button id="zero" onclick="zero();">0</button></td>
+                    <td><button id="equal" onclick="solveExpression();">=</button></td>
+                    <td><button id="divide" onclick="addDivide();">/</button></td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </body>
+
+</html>

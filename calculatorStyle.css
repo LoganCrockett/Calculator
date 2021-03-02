@@ -1,0 +1,62 @@
+/*
+    Created by: Logan Crockett
+    On: 8/7/20
+
+    Version: 1.0
+
+    Purpose: Provides styling to the table our calculator is in on the calculator.html page
+*/
+
+h1 {
+  background-color: chartreuse;
+  text-align: center;
+
+  /*These three properties make sure the h1 stay at the top & sides of the page*/
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 180px;
+  border: 2px solid darkblue;
+  background-color: skyblue;
+}
+
+span {
+  margin-top: 4px;
+  width: 170px;
+  background-color: white;
+  /*display: flex;/*Set the display to flex so it grows and shrinks with the table*/
+  text-align: right;
+  float: right;
+  border: 1px solid black;
+  
+  /*
+  These next three properties prevent the expression from overflowing on the page
+  Borrowed From: https://www.w3schools.com/cssref/css3_pr_text-overflow.asp
+  */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*By using hover, we can dispaly the whole expression again*/
+span:hover {
+  width: auto;
+  overflow:visible;
+}
+
+button {
+  color: black;
+  width: 2em;
+  margin: 5px;
+}
+
+button:hover {
+  transition: .5s;
+  background-color: lightgreen;
+  box-shadow: 2px 5px grey;
+}
